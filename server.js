@@ -30,7 +30,6 @@ app.post("/images", upload.single("image"), async (req, res) => {
 
   console.log(result);
 
-  const description = req.body.description;
   res.send({ imagePath: `/images/${result.Key}` });
 });
 
